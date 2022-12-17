@@ -1,12 +1,13 @@
 import os
 os.system("cls")
 
-primer_exsamen=float(input("Escribir el primer numero:"))
-segundo_examen=float(input("Escribir el segundo  numero:"))
-tercer_examen=float(input("Escribir el tercer numero:"))
+r = float(input("Ingrese el radio del cilindro: "))
+h = float(input("Ingrese la altura del cil"))
 
-propina=20
-if (primer_exsamen>13):propina+5
-if (segundo_examen>13):propina+5
-if (tercer_examen>13):propina+5
-print("Valor de la propina",propina)
+area_base = 3.1416 * r(r ** 2)
+area_lateral = 2 * 3.1416 * r * h
+area_total = 2 * area_base * area_lateral
+
+print("El area base del cilindro es:",format(area_base, ".2f"))
+print("El area lateral del cilindro es:",format(area_lateral, ".2f"))
+print("El area total del cilindro es:",format(area_total, ".2f"))

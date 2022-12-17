@@ -1,23 +1,11 @@
 import os
-os.system("cls")
+os.system( "cls" )
 
-num_1 = input("Escribir el primer numero: ")
-num_2 = input("Escribir el segundo  numero: ")
-num_3 = input("Escribir el tercer numero: ")
+base_r  =  float ( input ( "Ingrese la base del rectangulo: " ))
+altura_r  =  float ( input ( "Ingrese la altura del recto: " ))
 
+area_r  =  base_r  *  altura_r
+perimetro_r  =  2  * ( base_r  +  altura_r )
 
-if num_1 > num_2:
-   medio = num_1
-   xtem = num_2
-
-else:
-   medio = num_2
-   xtem = num_1
-
-if medio > num_3 :
-   medio = num_3
-
-if medio < xtem :
-   medio = xtem
-
-print("El número Medio es : ", medio)
+print ( "El area del rectangulo es: " , format ( area_r , ".2f" ))
+print ( "El perimetro del rectangulo es: " , format ( perimetro_r , ".2f" ))

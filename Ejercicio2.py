@@ -1,30 +1,12 @@
-import os
-os.system("cls")
+print("Haciendo converciones...")
 
-unidades = float(input("cantidad de productos: "))
+met = int(input("ingrese la cantidad en metros: "))
+ centi = met * 100 
+ pulga = centi / 2.54
+ pies = pulga / 12
+ yardas = pies / 3
 
-if unidades >= 1 and unidades <= 50:
-    print("5 caramelos de regalo")
-
-elif unidades >= 51 and unidades <= 100:
-    print("se regalan 10 caramelos")
-
-else: 
-    print("Se regalan 15 caramelos")
-importe = unidades * 20
-
-print("El descuento seria...")
-if importe > 700:
-    descuento = importe * 0.16
-    importe_pagar = importe - descuento  
-    print("descuento",format(importe_pagar,".2f"))
-
-elif importe < 700 and importe > 501:
-    descuento = importe * 0.14
-    importe_pagar = importe - descuento  
-    print("descuento",format(importe_pagar,".2f"))
-
-else :
-    descuento = importe * 0.12
-    importe_pagar = importe - descuento  
-    print(f"descuento",format(importe_pagar,".2f"))
+ print(("Centimetros: ",format(centi,".2f")),"cm")
+ print(("Pulgadas: ",format(pulga,".2f")),"in")
+ print(("Pies: ",format(pies,".2f")),"ft")
+ print(("Yardas: ",format(yardas,".2f")),"yd")

@@ -1,13 +1,8 @@
-import os
-os.system("cls")
+print("Calculando la estatura de las personas de pies a metros...")
 
-nota_a = float(input("Ingrese su primera nota: "))
-nota_b = float(input("Ingrese su segunda nota: "))
-nota_c = float(input("Ingrese su tercera nota: "))
+pies = float(input("Pies: "))
+pulgadas = float(input("Pulgadas: "))
 
-if nota_c < 10:
-    nota_c +=2
+estatura = (((pies * 12) + pulgadas) * 2.54) / 100
 
-promedio = float((nota_a + nota_b + nota_c)/3)
-
-print(promedio)
+print("La estatura en metros es: ",format(estatura,".2f"),"m")

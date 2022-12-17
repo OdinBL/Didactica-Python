@@ -1,20 +1,9 @@
-import os
-os.system("cls")
+gigaby = int(input("ingrese capacidad de disco en GB: "))
 
-numero = input("Ingrese el numero de 4 cifras: ")
+megaby = gigaby * 1024
+kiloby = megaby * 1024
+cbytes = kiloby * 1024
 
-if len(numero) != 4:
-    print("El numero debe ser de 4 cifras")
-
-else:
-    cf_men = 10;
-    cf_may = 0;
-
-    for cifra in numero:
-        if (int(cifra) < cf_men):
-            cf_men = int(cifra);
-
-        elif (int(cifra) > cf_may):
-            cf_may = int(cifra);
-    
-    print(f"El mayor número posible es: {str(cf_may)}{str(cf_men)}");
+print("La capacidad del disco duro es: ",gigaby,"GB")
+print("En Megabytes es: ",kiloby,"KB")
+print("En bytes es: ",cbytes,"B")
